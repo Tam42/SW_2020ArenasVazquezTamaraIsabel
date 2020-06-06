@@ -1,4 +1,5 @@
 <?php
+    //Se valida contraseña y RFC
     if (isset($_POST['enviar'])){
         $rfc=$_POST['rfc'];
         $pass=$_POST['pass'];
@@ -18,34 +19,41 @@
         echo "<br><br>";
 
     }
+    //Inicia formulario
     echo"<form action='Actividad7.php' method='post'>
       <fieldset>
        <legend><h3>Ingrese sus datos</h3></legend>
+       <!--RFC-->
         <p>RFC</p>
         <br>
         <input type='text' name='rfc' placeholder='Ejemplo: PEHC651213' required pattern='^([A-Z]{4}|[A-Z]{5})([0-9]{2})(((0)[1-9])|((1)[0-2]))(((0)[1-9])|([1-2][0-9])|((3)[0-1]))[A-Z\d]{3}?' title='El RFC debe contener las p'>
         <br>
         <br>
+        <!--Nombre-->
         <p>Nombre</p>
         <br>
         <input type='text' name='name' placeholder='Ejemplo: Carlos' pattern='[a-zA-ZÁÉÍÓÚÑáéíóúñ]{3,20}' title='Este no es un nombre' required>
         <br>
         <br>
+        <!--Apellido Paterno-->
         <p>Apellido Paterno</p>
         <br>
         <input type='text' name='pat' placeholder='Ejemplo: Perez' pattern='[a-zA-ZÁÉÍÓÚÑáéíóúñ]{3,20}' title='Este no es un apellido' required>
         <br>
         <br>
+        <!--Apellido Materno-->
         <p>Apellido Materno</p>
         <br>
         <input type='text' name='mat' placeholder='Ejemplo: Hernandez' pattern='[a-zA-ZÁÉÍÓÚÑáéíóúñ]{3,20}' title='Este no es un apellido' required>
         <br>
         <br>
+        <!--Nacimiento-->
         <p>Fecha de Nacimiento</p>
         <br>
         <input type='date' name='date'>
         <br>
         <br>
+        <!--Colegio-->
         <p>Colegio</p>
         <br>
         <select name='college'>
@@ -87,6 +95,7 @@
         </select>
         <br>
         <br>
+        <!--Contraseña-->
         <p>Contraseña</p>
         <br>
         <input type='password' name='pass' pattern='^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!-.]).{10,25})' title='La contraseña debe contener al menos 10 caracteres, usando mayúsculas, minúsculas, números y caracteres especiales, al menos dos de los mencionados.'  required>
