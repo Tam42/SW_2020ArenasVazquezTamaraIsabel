@@ -1,0 +1,25 @@
+REGEX
+(?<![a-zA-ZÁÉÍÓÚÑáéíóúñ])[R-r]egex(?![a-zA-ZÁÉÍÓÚÑáéíóúñ])
+
+TEXTO EN EL QUE SE PROBÓ
+
+Aquí te amo...
+
+
+Aquí te Regex amo. 
+
+En los oscuros regex, pinos se desenreda elregex viento. 
+
+Fosforece la luna regex sobre las aguas errantes. 
+
+Andan días [Regex] iguales persreguexiguiéndose. 
+
+Se "regex" desciñe la niebla en danzantes figuras. 
+
+Una gaviota de plata se Regexdescuelga del ocaso regex. 
+
+A veces (Regex) una vela. Altas, altas estrellas. 
+
+Regex O la cruz negra de un barco. 
+
+-Pablo Neruda regex
