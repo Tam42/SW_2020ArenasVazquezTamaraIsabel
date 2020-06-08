@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 8</title>
+    <title>Actividad 9</title>
 </head>
 <body>
-    <form action="../dynamics/Actividad8.php" method="POST">
+    <form action="../dynamics/Actividad9.php" method="POST">
         <fieldset>
             <!-- Formulario -->
             <legend><h3>Ingrese el texto a cifrar.</h3></legend>
             <!-- Texto -->
             <p>Texto:</p>
             <br>
-            <input type="text" name="txt" placeholder="Min 50 carateres, máx 200 caracteres." pattern='[A-Za-z.,¿?]{50,200}' title='No se aceptan carcteres distintos a: letras (no latinas), puntos, comas y signos de interrogación.' required>
-            <br>
-            <br>
-            <!-- Llave -->
-            <p>Llave:</p>
-            <input type="number" name="key" min="1" max="30" required>
+            <input type="text" name="txt" placeholder="Min 1 carater, máx 150 caracteres." pattern='[A-Za-z.,¿?:;]{1,150}' title='No se aceptan carcteres distintos a: letras (no latinas), puntos, comas, punto y coma, dos puntos y signos de interrogación.' required>
             <br>
             <br>
             <br>
             <br>
-            <input type="submit" value="Cifrar">
+            <input type="submit" value="Cifrar" name="cifrar">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <form action="../dynamics/Actividad9.php" method="POST">
+        <fieldset>
+            <!-- Formulario -->
+            <legend><h3>Ingrese el texto a descifrar.</h3></legend>
+            <!-- Texto -->
+            <p>Texto:</p>
+            <br>
+            <input type="text" name="txts" placeholder="Min 1 carater, máx 150 caracteres." required>
+            <br>
+            <br>
+            <p>Descifrar:</p>
+            <br>
+            <input type="number" name="decif" required>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Descifrar" name="descifrar">
         </fieldset>
     </form>
 </body>
