@@ -8,16 +8,17 @@
  $ky=intval($k);
 
 
-
+    //Descifrar mensaje
     for($i=0;$i<strlen($txt);$i++){
         $txt[$i]=chr(ord($txt[$i])-$ky);
     }
 
-
+    //Longitud de texto
     $texts=strlen($txt);
     $m=0;
     $sign=1;
 
+    //Saber cuantos espacios tiene el texto.
     while($m<$texts){
     $l=$txt[$m];
     //Valida si es signo de puntuacion
@@ -27,6 +28,7 @@
     $m++;
 }
 
+//Validar que sea la llave correcta
 if($sign==$ky){
         echo $txt;
 }
